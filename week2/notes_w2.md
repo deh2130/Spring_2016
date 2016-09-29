@@ -26,85 +26,81 @@ if(cash = 0){
 - Struggles?
 - Show and Tell.
 
-## Git! 
-### Big Push
-First, you are going to push all of the code that you wrote last week to your forked repo.
-1. Go to the root folder, should be 'Spring 2016' 
-2. Type `git add .`, this will add all your work
-3. Next type 'git commit -m "first push"', this takes a snapshot of your repo at this moment.
-4. Do this...`git push`, this pushes everything to your github repo/
-
-Go to your github page, go your forked repo, you should see all over you code.
-
-### Adding a remote
-Next, we need to connect your forked repo to the original. This is called a 'remote'.
-
-1. In terminal, paste this `git remote add upstream https://github.com/awdriggs-js/Spring_2016`.
-2. Confirm that worked, `git remote -v`, you should see 4 listings
-
-### Big Pull
-Finally, you are going to pull down the updated files that I have been working on.
-1. Type 'git pull upstream master'
-2. You might get a 'merge confirmation' pop-up in sublime or in the terminal, just ignore and exit out.
-
-That's it.
-
 ## EX1 - 5 minutes
 Comparisons compare two things, give you an answer as a boolean value. Let's dig into some examples
 	
 ```
-	// discover exercise regarding strings, numbers and booleans, conditional logic
+/*
+if (true == true){
+	alert('hi')
+}else{
+	alert('bye')
+}
+*/
 
+/*
+if (false == false){
+	alert('dude')
+}else{
+	alert('nope')
+}
+*/
 
-	/*
-	if (true == true){
-		alert('hi')
-	}else{
-		alert('bye')
-	}*/
+/*
+if ("4" == 4){
+	alert('barnard')
+}else{
+	alert('columbia')
+}
+*/
 
-	/*
-	if (false == false){
-		alert('dude')
-	}else{
-		alert('nope')
-	}*/
+/*
+if("4" === 4){
+  alert('barnard')
+}else{
+  alert('columbia');
+*/
 
-	/*if ("4" == 4){
-		alert('barnard')
-	}else{
-		alert('marford - I made this up')
-	}*/
+/*
+if (true){
+  alert('goo goo dolls')
+}else{
+  alert('vanilla ice')
+}
+*/
 
-	/*if ("4" === 4){
-		alert('barnard')
-	}else{
-		alert('marford - I made this up')
-	}*/
+/*
+if (("5" + "5") == "55"){
+  alert('tofu')
+}else{
+  alert('soybean')
+}
+*/
 
-	/*if (true){
-		alert('goo goo dolls')
-	}else{
-		alert('vanilla ice')
-	}*/
+/*
+if ((6 + "5") == "65"){
+  alert('richard')
+}else{
+  alert('branson')
+}
+*/
+		
+/*
+if (!true == false){
+  alert('goo goo dolls')
+}else{
+  alert('vanilla ice')
+}
+*/
 
-	/*if (false){
-		alert('the neighborhood')
-	}else{
-		alert('one direction')
-	}*/
-
-	/*if (("5" + "5") == "55"){
-		alert('tofu')
-	}else{
-		alert('soybean')
-	}*/
-
-	/*if ((6 + "5") == "65"){
-		alert('richard')
-	}else{
-		alert('branson')
-	}*/
+/*
+var something; 
+if (something != undefined){
+  alert('car')
+}else{
+  alert('van')
+}
+*/
 ```
 
 ## Mini-Lesson 2, while loops

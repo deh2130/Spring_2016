@@ -1,12 +1,10 @@
-// alert('js working');
+console.log('working');
 
-var countDown = 10;
+var countdown = 10;
 
-while (countDown >= 1){
-	//this code will be run!
-	
-	countDown--;
-	document.write(countDown);
+while(countdown >= 1){
+	document.write(countdown);
+	countdown--; //countdown = countdown - 1;
 }
 
-alert('countdown finished');
+document.write('done')

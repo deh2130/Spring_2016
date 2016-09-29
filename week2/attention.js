@@ -1,15 +1,13 @@
-//alert('js working yall');
+console.log('working');
 
-var name = prompt('whats your name');
+var userName = prompt('What\'s your name?');
 
 var payingAttention = true;
 
 while(payingAttention){
-	document.write(name + 
-		' is paying attention at ' 
-		+ Date() + '! <br>');
-	
-	payingAttention = confirm('are you paying attention?')
+	console.log("On " + Date() + " " + " was paying attention <br>");
+	payingAttention = confirm(userName + " are you still paying attention?");
+	console.log(payingAttention);
 }
 
-alert('done!');
+document.write(userName + " stopped paying attention!");

@@ -1,5 +1,4 @@
 # Week 1 Instructor Notes
-
 ## Objectives
 - I can explain when and why javascript is used.
 - I can use the terminal to navigate, create files and folders.
@@ -7,7 +6,7 @@
 
 ## Do Now
 - Open Slack (Browser or App!)
-- In our class channel "js_driggers" slack your response to this question. What do you hope to accomplish in this class? 
+- In our class channel "f16-w-js" slack your response to this question. What do you hope to accomplish in this class? 
 
 ## Introductions/Housekeeping
 
@@ -36,65 +35,12 @@ Javascript is nearly a universal language. It runs all sorts of devices and syst
 - JS is the standard for all web interactions.
 - JS is can be used as a full stack, meaning we can write js for both the client and the server. This is awesome!
 
-## MiniLesson 1 - Using Terminal
-Get Terminal fired up!
+## MiniLesson 1 - Using Github Desktop 
 ### Git and Github
-1. type `git --version`, if github isn't installed it will prompt you to install. Do it!
-2. Go to https://github.com/awdriggs-js/Spring_2016
-3. Find the "Fork" button. Click it!
-4. Copy the HTTPS clone url.
-5. Back in Terminal, go to the director where you want all your work to live, type `git clone` then paste the clone url.
-
-### Bash it!
-We are going to be using the terminal a lot. At first it might seem cumbersome, but there is a purpose. First, it is way faster to navigate, create folders, and create files in the terminal. Second, we are going to be using terminal to commit our work to github. Lastly, being able to use the terminal is really helpful when you start deploying apps to a server. It's better to start now.
-
-#### Navigation
-`cd folderName`
-- let's you change directories (that's what it stands for)
-- it's like you're clicking into that folder
-
-`cd ..`
-- let's you go to the previous directory
-
-Try it, navigate into week0, the type `cat README.md` Hint: tab key will autocomplete, keep hitting type until you get what you want.
-
-
-#### Creating a folder
-Navigate back out to the repo folder. `cd ..`.
-Use `mkdir` followed by your name, no spaces. this creates a folder for you to do all the work.
-
-This is where you should do your work. *DO NOT* work in work in the other folders in the repo. There is a strong chance it will be overwritten when you pull down my updates.
-
-#### Creating Files
-
-#### Cheatsheet of Common Commands
-`pwd`
--print working directory, shows you where you are now
-
-`open .`
--opens the current folder in finder
-
-`ls`
-- lists the files in a folder
-
-`cd folderName`
-- let's you change directories (that's what it stands for)
-- it's like you`re clicking into that folder
-
-`cd ..`
-- let's you go to the previous directory
-
-`touch filename`
-- make a file where you are in the terminal
-
-`rm filename`
-- will delete a file permanently - won't be included in your trash
-
-`mkdir foldername`
-- make a folder where you are in the terminal
-
-`rm -rf foldername`
-- will delete a folder permanently - won't be included in your trash
+  1. Go to https://github.com/ADDA-js/learn-js 
+  2. Find the "Fork" button. Click it!
+  4. Click "Clone or Download" then click "Open in Desktop." If you have Github desktop installed, this should work on load the repo onto your computer
+  5. Back in Terminal, go to the director where you want all your work to live, type `git clone` then paste the clone url.
 
 ## MiniLesson 2 - Javascript Data, Comparisons, Conditionals
 
@@ -111,7 +57,7 @@ This is where you should do your work. *DO NOT* work in work in the other folder
 - variables can be initialized, then set
 - if the variable is initialized, it's value is undefined, this is not good practice.
 - you can do variable == undefined and it would be true
-- undefined is a variable that's available in javascript on default (easy explaination)
+- undefined is a variable that's available in javascript on default (easy explanation)
 - undefined is a variable that's available in global scope on default
 - variables can be initialized and set in one go
 - go over the different datatypes being used
@@ -171,18 +117,67 @@ If they younger than 18, alert them they can't vote.
 **Challenge**
 Ask the user if they are registered to vote. If yes continue with the first part. If no, redirect the user to the website to register in New York.
 
-## Lets Push!
-1. Save all your work.
-2. Go back to terminal, navigate to the root of this repo.
-3. Type 'git add .', this adds all the changes you made today.
-4. Type 'git commit -m "adding work from w1 class"'
-5. Type 'git push'
-6. Check out your github page, all work you did in class should now be online.
+## EX2 - 5 minutes
+Comparisons compare two things, give you an answer as a boolean value. Let's dig into some examples
+	
+```
+	// discover exercise regarding strings, numbers and booleans, conditional logic
 
+
+	/*
+	if (true == true){
+		alert('hi')
+	}else{
+		alert('bye')
+	}*/
+
+	/*
+	if (false == false){
+		alert('dude')
+	}else{
+		alert('nope')
+	}*/
+
+	/*if ("4" == 4){
+		alert('barnard')
+	}else{
+		alert('marford - I made this up')
+	}*/
+
+	/*if ("4" === 4){
+		alert('barnard')
+	}else{
+		alert('marford - I made this up')
+	}*/
+
+	/*if (true){
+		alert('goo goo dolls')
+	}else{
+		alert('vanilla ice')
+	}*/
+
+	/*if (false){
+		alert('the neighborhood')
+	}else{
+		alert('one direction')
+	}*/
+
+	/*if (("5" + "5") == "55"){
+		alert('tofu')
+	}else{
+		alert('soybean')
+	}*/
+
+	/*if ((6 + "5") == "65"){
+		alert('richard')
+	}else{
+		alert('branson')
+	}*/
+```
+
+## Homework Push!
+  - show students how to push how to the homework repo.
+  
 ## Homework
-[A Simple Calculator](https://classroom.github.com/assignment-invitations/903e33134291838a197b7406163870d5), accept the invitation. 
-- In terminal, do 'git clone <yourHWRepo>'
-- Do your work in this repo.
-- Use the psuedo code to get started if you are stuck.
-- Commit and push often, push your final project by Tuesday night.
+[starter code](https://github.com/ADDA-js/F_2016_JS_HW/tree/master/w1-myCalc)
 
